@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e19ffc97-1d62-4d4d-83b7-bb9d13adc18f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1n8FXYP4uswx3c5vdwres9XikNk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.data.extractors.current.export.id" value="CSV-Groovy.csv.groovy" />
+    <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="csvParser-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="csv_parser" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadCSVDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csv_parser" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadCSVDataTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadCSVDataTest.whenCellHasQuotedStringOrEmbededComma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csv_parser" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadCSVDataTest" />
+      <option name="METHOD_NAME" value="whenCellHasQuotedStringOrEmbededComma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ReadCSVDataTest.whenCellHasQuotedStringOrEmbededComma" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.ReadCSVDataTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e19ffc97-1d62-4d4d-83b7-bb9d13adc18f" name="Default Changelist" comment="" />
+      <created>1610763851062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610763851062</updated>
+      <workItem from="1610763852559" duration="97144000" />
+      <workItem from="1610992236104" duration="490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="397" y="258" key="#Log_Highlighting_(ideolog)" timestamp="1610946476551">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="258" key="#Log_Highlighting_(ideolog)/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610946476551" />
+    <state x="208" y="31" key="#Project_Structure" timestamp="1610811038122">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1610811038122" />
+    <state x="712" y="48" width="728" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1610920815328">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="712" y="48" width="728" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610920815328" />
+    <state x="822" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1610943221813">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="822" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610943221813" />
+    <state x="822" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1610857572420" />
+    <state x="495" y="322" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610897770939">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="495" y="322" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1610897770939" />
+    <state x="202" y="204" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1610915473062">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="202" y="204" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610915473062" />
+    <state x="830" y="100" width="510" height="700" key="DiffContextDialog" timestamp="1610809120591">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="830" y="100" width="510" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1610809120591" />
+    <state x="764" y="400" key="Github.ShareDialog" timestamp="1610948361556">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="764" y="400" key="Github.ShareDialog/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610948361556" />
+    <state width="1398" height="153" key="GridCell.Tab.0.bottom" timestamp="1610992713971">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945455301" />
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610945901137" />
+    <state width="1398" height="275" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1610899013077" />
+    <state width="1398" height="153" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610992713971" />
+    <state width="921" height="153" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610987258815" />
+    <state width="1398" height="153" key="GridCell.Tab.0.center" timestamp="1610992713971">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.center/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945455299" />
+    <state width="1398" height="259" key="GridCell.Tab.0.center/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610945901135" />
+    <state width="1398" height="275" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1610899013076" />
+    <state width="1398" height="153" key="GridCell.Tab.0.center/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610992713971" />
+    <state width="921" height="153" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610987258814" />
+    <state width="1398" height="153" key="GridCell.Tab.0.left" timestamp="1610992713970">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.left/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945455297" />
+    <state width="1398" height="259" key="GridCell.Tab.0.left/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610945901130" />
+    <state width="1398" height="275" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1610899013075" />
+    <state width="1398" height="153" key="GridCell.Tab.0.left/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610992713970" />
+    <state width="921" height="153" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610987258814" />
+    <state width="1398" height="153" key="GridCell.Tab.0.right" timestamp="1610992713971">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.right/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945455300" />
+    <state width="1398" height="259" key="GridCell.Tab.0.right/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610945901136" />
+    <state width="1398" height="275" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1610899013077" />
+    <state width="1398" height="153" key="GridCell.Tab.0.right/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610992713971" />
+    <state width="921" height="153" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610987258815" />
+    <state width="1113" height="250" key="GridCell.Tab.1.bottom" timestamp="1610986477242">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945385004" />
+    <state width="886" height="260" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610944728935" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1610896245142" />
+    <state width="1113" height="250" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610986477242" />
+    <state width="1113" height="250" key="GridCell.Tab.1.center" timestamp="1610986477242">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.1.center/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945385002" />
+    <state width="886" height="260" key="GridCell.Tab.1.center/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610944728933" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1610896245141" />
+    <state width="1113" height="250" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1610986477242" />
+    <state width="1113" height="250" key="GridCell.Tab.1.left" timestamp="1610986477241">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.1.left/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945385001" />
+    <state width="886" height="260" key="GridCell.Tab.1.left/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610944728932" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1610896245141" />
+    <state width="1113" height="250" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1610986477241" />
+    <state width="1113" height="250" key="GridCell.Tab.1.right" timestamp="1610986477242">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.1.right/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610945385004" />
+    <state width="886" height="260" key="GridCell.Tab.1.right/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610944728934" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1610896245142" />
+    <state width="1113" height="250" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1610986477242" />
+    <state x="516" y="132" key="Maven.ArtifactSearchDialog" timestamp="1610905039313">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="516" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1610897691119" />
+    <state x="516" y="132" key="Maven.ArtifactSearchDialog/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610905039313" />
+    <state x="374" y="50" key="SettingsEditor" timestamp="1610992345748">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="374" y="28" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1610811927248" />
+    <state x="374" y="50" key="SettingsEditor/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610992345748" />
+    <state x="341" y="201" key="Vcs.Push.Dialog.v2" timestamp="1610987414454">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="341" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-215.1440.2537@0.23.1440.877" timestamp="1610987414454" />
+    <state x="498" y="193" width="942" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1610858073698">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="498" y="193" width="942" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1610858073698" />
+    <state x="138" y="163" width="1265" height="676" key="editAsTableFormatDialogDimension" timestamp="1610936580549">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="138" y="163" key="editAsTableFormatDialogDimension/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610936580549" />
+    <state x="138" y="163" width="1265" height="676" key="editAsTableFormatDialogDimension/0.0.1440.900@0.0.1440.900" timestamp="1610852973187" />
+    <state x="773" y="223" width="598" height="548" key="find.popup" timestamp="1610982081835">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="773" y="205" width="598" height="490" key="find.popup/0.0.1440.900/1440.-215.1440.2537@0.0.1440.900" timestamp="1610946595651" />
+    <state x="773" y="205" width="598" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1610827571488" />
+    <state x="773" y="223" width="598" height="548" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1610982081835" />
+    <state x="200" y="394" key="refactoring.ChangeSignatureDialog" timestamp="1610914504686">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="200" y="394" key="refactoring.ChangeSignatureDialog/0.0.1440.900/1440.-238.1440.2560@0.0.1440.900" timestamp="1610914504686" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
