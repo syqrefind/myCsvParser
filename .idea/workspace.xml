@@ -13,11 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e19ffc97-1d62-4d4d-83b7-bb9d13adc18f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadCSVData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadCSVData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WriteCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WriteCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/starbucks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/starbucks.csv" afterDir="false" />
-    </list>
+    <list default="true" id="e19ffc97-1d62-4d4d-83b7-bb9d13adc18f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
