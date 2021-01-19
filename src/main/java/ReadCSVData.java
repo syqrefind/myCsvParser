@@ -18,9 +18,10 @@ import java.util.List;
  * starbucks_sample.csv has 3 records
  */
 public class ReadCSVData {
-    public static final String FILE_PATH = "/Users/babydeveloper/intellij-workspace/Insight/myCSVparser/src/main/resources/starbucks_sample.csv";
+    public static final String FILE_PATH = "/Users/babydeveloper/intellij-workspace/Insight/myCSVparser/src/main/resources/starbucks.csv";
 
     static final Logger logger = LoggerFactory.getLogger(ReadCSVData.class);
+    //options: parseLineUsingRegex, parseLineUsingCode
     private static String parser = "parseLineUsingCode";
 
     public static void process() {
