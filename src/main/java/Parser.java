@@ -29,7 +29,6 @@ public class Parser {
         return lineAfterParse;
     }
 
-
     public static String[] parseLineUsingCode(String line) {
         List<String> res = new ArrayList<>();
         char[] lineChar = line.toCharArray();
@@ -43,7 +42,6 @@ public class Parser {
             if(lineChar[i] == '\"'){
                 inQuotes = !inQuotes;
             }
-
             // when not inQuote
             if(inQuotes == false){
                 if(lineChar[i] == ','){      // finish one cell
@@ -67,7 +65,7 @@ public class Parser {
                     sb = new StringBuilder();
                 } else if(lineChar[i] == '\"' && lineChar[i+1] == ',' ||
                         lineChar[i] == '\"' && i == lineChar.length-1){
-
+                    continue;
                 } else{
                     sb.append(lineChar[i]);
                 }
@@ -82,13 +80,39 @@ public class Parser {
                 sb.append(lineChar[i]);
             }
         }
+        return removeSpaces(res);
+    }
 
-        // trim leading and trailing whitespace
-        for(int i = 0; i < res.size(); i++ ) {
-            res.set(i, res.get(i).toString().replaceAll("\\s+", " "));
+
+    private static String[] removeSpaces(List<String> res) {
+        int end = 0;
+        //[Sd,          13,        Lunch]   list of string -> tmpArr for each string elem
+        // i
+        for(int i = 0; i < res.size(); i++ ){           //         j
+            char[] tmpArr = res.get(i).toCharArray(); // tmpArr: { 13448}
+            char[] resArr = new char[tmpArr.length];
+            for(int j = 0; j < tmpArr.length; j++){
+                if (tmpArr[j] == ' ' && (j==0 || tmpArr[j-1] == ' ')){
+                    continue;
+                }
+                resArr[end++] = tmpArr[j];
+            }
+            if(end>0 && tmpArr[end-1] == ' ') {
+                String newString = new String(resArr,0,end-1);
+                res.set(i,newString);
+            } else {
+                String newString = new String(resArr, 0, end);
+                res.set(i, newString);
+            }
+            //reset
+            resArr = null;
+            end = 0;
 
         }
-        return res.toArray((new String[res.size()]));
+
+        String[] arrayToReturn = res.toArray(new String[0]);
+
+        return arrayToReturn;
     }
 
 
