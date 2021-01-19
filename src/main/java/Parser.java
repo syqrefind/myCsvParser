@@ -31,22 +31,23 @@ public class Parser {
 
 
     public static String[] parseLineUsingCode(String line) {
-
         List<String> res = new ArrayList<>();
         char[] lineChar = line.toCharArray();
         StringBuilder sb = new StringBuilder();
         boolean inQuotes = false;
-
-        //"Se", 13,"L",60,6/22/12
-        //                      i
+        //0123
+        //"Sd",  13,"Lunch"
+        //     i
         for (int i = 0; i < lineChar.length; i++) {
             // check quote
             if(lineChar[i] == '\"'){
                 inQuotes = !inQuotes;
             }
+
             // when not inQuote
             if(inQuotes == false){
                 if(lineChar[i] == ','){      // finish one cell
+                    // if the field is empty
                     if(sb.length()==0) {
                         String emptyCell = " ";
                         sb.append(emptyCell);
@@ -55,13 +56,19 @@ public class Parser {
                     res.add(sb.toString());
                     // flash sb
                     sb = new StringBuilder();
-                } else if(i == lineChar.length-1){
-                    sb.append(lineChar[i]);
+                }
+                else if(i == lineChar.length-1){
+                    if(lineChar[i] != '\"') {
+                        sb.append(lineChar[i]);
+                    }
                     // add finished cell to res
                     res.add(sb.toString());
                     // flash sb
                     sb = new StringBuilder();
-                }else{
+                } else if(lineChar[i] == '\"' && lineChar[i+1] == ',' ||
+                        lineChar[i] == '\"' && i == lineChar.length-1){
+
+                } else{
                     sb.append(lineChar[i]);
                 }
             }
@@ -76,8 +83,11 @@ public class Parser {
             }
         }
 
-        System.out.println(res.size());
+        // trim leading and trailing whitespace
+        for(int i = 0; i < res.size(); i++ ) {
+            res.set(i, res.get(i).toString().replaceAll("\\s+", " "));
 
+        }
         return res.toArray((new String[res.size()]));
     }
 
