@@ -1,10 +1,7 @@
-/*
+package myCSVParser;/*
  * Created by babydeveloper on 1/17/21.
  *
  */
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,17 +13,11 @@ public class Parser {
         // split the cell by commas, ignore commas in double quotes
         String[] lineAfterParse = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
         for (int i = 0; i < lineAfterParse.length; i++) {
-            // assign null to empty cell
-//            if (lineAfterParse[i] == null || lineAfterParse[i].isEmpty()) {
-//                lineAfterParse[i] = "null";
-//            } else {
-                // trim leading and tailing empty spaces
-                // strip the quotes
                 lineAfterParse[i] = lineAfterParse[i].trim()
                         .replaceAll("\"", "");
-//            }
         }
-        return lineAfterParse;
+        List<String> stringList = Arrays.asList(lineAfterParse);
+        return removeSpaces(stringList);
     }
 
     public static String[] parseLineUsingCode(String line) {
@@ -34,9 +25,7 @@ public class Parser {
         char[] lineChar = line.toCharArray();
         StringBuilder sb = new StringBuilder();
         boolean inQuotes = false;
-        //0123
-        //"Sd",  13,"Lunch"
-        //     i
+
         for (int i = 0; i < lineChar.length; i++) {
             // check quote
             if(lineChar[i] == '\"'){
@@ -76,20 +65,17 @@ public class Parser {
                 } else{
                     sb.append(lineChar[i]);
                 }
-            } else{
-                sb.append(lineChar[i]);
             }
         }
         return removeSpaces(res);
     }
 
-
+    // remove leading and tailing spaces within quotes
     private static String[] removeSpaces(List<String> res) {
         int end = 0;
-        //[Sd,          13,        Lunch]   list of string -> tmpArr for each string elem
-        // i
-        for(int i = 0; i < res.size(); i++ ){           //         j
-            char[] tmpArr = res.get(i).toCharArray(); // tmpArr: { 13448}
+        // List<String> -> tmpArr for each string elem
+        for(int i = 0; i < res.size(); i++ ){
+            char[] tmpArr = res.get(i).toCharArray();
             char[] resArr = new char[tmpArr.length];
             for(int j = 0; j < tmpArr.length; j++){
                 if (tmpArr[j] == ' ' && (j==0 || tmpArr[j-1] == ' ')){

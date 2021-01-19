@@ -1,3 +1,5 @@
+import myCSVParser.Parser;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -6,26 +8,37 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 
 public class ReadCSVDataTest {
-    
+    String testInput;
+    String[] expectedOutput = new String[5];
 
-    @Test
-    public void whenCellHasQuotedStringOrEmbededComma() {
+    @Before
+    public void setup(){
+        testInput = ",11854   ,\"        Lunch,         Oven-warmed Food, Reserve Amenity\",6036798789,6/22/12  ";
 
-        String testInput = ",11854,\"        Lunch,         Oven-warmed Food, Reserve Amenity\",6036798789,6/22/12  ";
-        String[] expectedOutput = new String[5];
         expectedOutput[0] = "";
         expectedOutput[1] = "11854";
         expectedOutput[2] = "Lunch, Oven-warmed Food, Reserve Amenity";
         expectedOutput[3] = "6036798789";
         expectedOutput[4] = "6/22/12";
+    }
+    
+
+    @Test
+    public void whenCellHasQuotedStringOrEmbededCommaParseLineUsingCode() {
 
         int lineAfterParserSize = Parser.parseLineUsingCode(testInput).length;
         int expectedSize = 5;
         assertThat(lineAfterParserSize).isEqualTo(expectedSize);
 
-        String[] firstRow = Parser.parseLineUsingCode(testInput);
-        assertThat(firstRow).isEqualTo(expectedOutput);
-
+        String[] parseFirstRowUsingCode = Parser.parseLineUsingCode(testInput);
+        assertThat(parseFirstRowUsingCode).isEqualTo(expectedOutput);
     }
 
+    @Test
+    public void whenCellHasEmptySpacesWithinQuotesUsingRegex(){
+
+        String[] parseFirstRowUsingRegex = myCSVParser.Parser.parseLineUsingRegex(testInput);
+        assertThat(parseFirstRowUsingRegex).isEqualTo(expectedOutput);
+
+    }
 }

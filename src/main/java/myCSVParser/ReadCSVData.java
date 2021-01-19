@@ -1,10 +1,11 @@
+package myCSVParser;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -21,8 +22,9 @@ public class ReadCSVData {
     public static final String FILE_PATH = "/Users/babydeveloper/intellij-workspace/Insight/myCSVparser/src/main/resources/starbucks.csv";
 
     static final Logger logger = LoggerFactory.getLogger(ReadCSVData.class);
-    //options: parseLineUsingRegex, parseLineUsingCode
-    private static String parser = "parseLineUsingCode";
+    //TODO:
+    // change parse logic in here: parseLineUsingRegex, parseLineUsingCode
+    private static String parser = "parseLineUsingRegex";
 
     public static void process() {
         List<String[]> records = new ArrayList<>();
@@ -33,8 +35,7 @@ public class ReadCSVData {
 
             long startTime = System.nanoTime();
             while ((line = br.readLine()) != null) { // read from the 2nd row till the end
-                //TODO: test parseLineUsingxx
-                // here to change the parser
+
                 if(parser.equals("parseLineUsingRegex")) {
                     fields = Parser.parseLineUsingRegex(line);
                 } else if(parser.equals("parseLineUsingCode")){
@@ -44,7 +45,6 @@ public class ReadCSVData {
             }
 
             long endtTime = System.nanoTime();
-
             logger.info("{} execution time: {} milliseconds"
             + " for {} records", parser,(endtTime - startTime) / 1000000, records.size());
 
@@ -63,9 +63,6 @@ public class ReadCSVData {
             }
             System.out.println();
         }
-
-
-
 
     }
 }
