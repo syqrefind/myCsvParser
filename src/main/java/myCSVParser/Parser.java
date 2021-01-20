@@ -22,19 +22,19 @@ public class Parser {
 
     public static String[] parseLineUsingCode(String line) {
         List<String> res = new ArrayList<>();
-        char[] lineChar = line.toCharArray();
+        char[] lineCharArray = line.toCharArray();
         StringBuilder sb = new StringBuilder();
         boolean inQuotes = false;
 
-        for (int i = 0; i < lineChar.length; i++) {
+        for (int i = 0; i < lineCharArray.length; i++) {
             // check quote
-            if(lineChar[i] == '\"'){
+            if(lineCharArray[i] == '\"'){
                 inQuotes = !inQuotes;
             }
             // when not inQuote
             if(inQuotes == false){
-                if(lineChar[i] == ','){      // finish one cell
-                    // if the field is empty
+                if(lineCharArray[i] == ','){      // finish one cell
+                    // if the field is empty, append empty cell to sb
                     if(sb.length()==0) {
                         String emptyCell = " ";
                         sb.append(emptyCell);
@@ -44,26 +44,29 @@ public class Parser {
                     // flash sb
                     sb = new StringBuilder();
                 }
-                else if(i == lineChar.length-1){
-                    if(lineChar[i] != '\"') {
-                        sb.append(lineChar[i]);
+                // hit the last element in lineCharArray
+                else if(i == lineCharArray.length-1){
+                    // add the last element to sb if it is not a quote
+                    if(lineCharArray[i] != '\"') {
+                        sb.append(lineCharArray[i]);
                     }
                     // add finished cell to res
                     res.add(sb.toString());
                     // flash sb
                     sb = new StringBuilder();
-                } else if(lineChar[i] == '\"' && lineChar[i+1] == ',' ||
-                        lineChar[i] == '\"' && i == lineChar.length-1){
+                }
+                else if(lineCharArray[i] == '\"' && lineCharArray[i+1] == ',' ||
+                        lineCharArray[i] == '\"' && i == lineCharArray.length-1){
                     continue;
                 } else{
-                    sb.append(lineChar[i]);
+                    sb.append(lineCharArray[i]);
                 }
             }
             // when inQuote
             else if(inQuotes == true){
-                if(lineChar[i] == '\"'){
+                if(lineCharArray[i] == '\"'){
                 } else{
-                    sb.append(lineChar[i]);
+                    sb.append(lineCharArray[i]);
                 }
             }
         }
@@ -72,24 +75,31 @@ public class Parser {
 
     // remove leading and tailing spaces within quotes
     private static String[] removeSpaces(List<String> res) {
-        int end = 0;
-        // List<String> -> tmpArr for each string elem
+        int end = 0;  // index in resArr which we will use to build the newString
+
         for(int i = 0; i < res.size(); i++ ){
+            // List<String> -> char[]tmpArr. keep each string in scope
             char[] tmpArr = res.get(i).toCharArray();
+            // create an empty resArr
             char[] resArr = new char[tmpArr.length];
             for(int j = 0; j < tmpArr.length; j++){
+                // if tmpArr[j] is a space, and is at the first position, or if we have two or more spaces continuously, then ignore
                 if (tmpArr[j] == ' ' && (j==0 || tmpArr[j-1] == ' ')){
                     continue;
                 }
                 resArr[end++] = tmpArr[j];
             }
+            String newString = null;
+            // post-processing: it is possible that we still left one space at the end, trim it
+            // e.g., "geoff "
+            //             j
             if(end>0 && tmpArr[end-1] == ' ') {
-                String newString = new String(resArr,0,end-1);
-                res.set(i,newString);
-            } else {
-                String newString = new String(resArr, 0, end);
-                res.set(i, newString);
+                newString = new String(resArr, 0, end - 1);
             }
+            else {
+                newString = new String(resArr, 0, end);
+            }
+            res.set(i,newString);
             //reset
             resArr = null;
             end = 0;

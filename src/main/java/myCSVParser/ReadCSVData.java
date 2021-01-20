@@ -11,11 +11,11 @@ import java.util.List;
 /*
  * Created by babydeveloper on 1/16/21.
  *
- * two kinds of parsing logic to compare the performance:
+ * two kinds of parsing logic are used in here to compare the performance:
  *  1) parseLineUsingRegex
  *  2) parseLineUsingCode
  *
- * starbucks.csv has 1405 records
+ * starbucks.csv has 1400+ records
  * starbucks_sample.csv has 3 records
  */
 public class ReadCSVData {
@@ -44,6 +44,7 @@ public class ReadCSVData {
                 records.add(fields);
             }
 
+            // printing the execution time
             long endtTime = System.nanoTime();
             logger.info("{} execution time: {} milliseconds"
             + " for {} records", parser,(endtTime - startTime) / 1000000, records.size());
@@ -52,6 +53,8 @@ public class ReadCSVData {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // printing the result
         for(String[] record: records) {
             for(int i = 0; i < record.length; i++){
                 if(i == record.length-1){
