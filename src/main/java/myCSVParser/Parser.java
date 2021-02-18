@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Parser {
-    public static String[] parseLineUsingRegex(String line) {
+public class Parser{
+    public static String[] parseLineUsingRegex(String line)  {
 
         // split the cell by commas, ignore commas in double quotes
         String[] lineAfterParse = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
@@ -110,6 +110,7 @@ public class Parser {
 
         return arrayToReturn;
     }
+
 
 
 //    public static void assignProperDataType(String line) {
